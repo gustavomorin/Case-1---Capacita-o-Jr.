@@ -1,0 +1,61 @@
+.secaonews {
+    position: relative;
+}
+
+.divisao{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.leque{
+    width: 40%;
+    z-index: 2;
+    margin-top: -40px;
+}
+
+.cardnews{
+    position: absolute;
+    top: 180px;
+    right: 118px;
+    bottom: 0;
+    z-index: 1;
+    width: 1235px;
+    height: 270px;
+    border-radius: 50px;
+    background-color: #EB0029 ;
+}
+
+.subtitulosecaonews{
+    font-family: poppinsbold ;
+    width: 100%;
+    font-size: 40px;
+    color: white;
+    line-height: 40px;
+}
+
+.divisao{
+    z-index: 2;
+}
+
+.ladodireito{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    line-height: 20px;
+    z-index: 2;
+    margin-top: 170px;
+    margin-left: 30px;
+}
+
+.newsparagrafo{
+    font-family: poppinslight;
+    width: 90%;
+    color: white;
+}
+
+input{
+    border-radius: 30px;
+    width: 90%;
+    height: 30px;
+}

@@ -1,0 +1,179 @@
+/* 
+    Estilos para o cabeçalho do site.
+*/
+
+.carrinhocompras{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.iconecarrinho{
+    font-size: 25px;
+    cursor: pointer;
+}
+
+header{
+    /* 
+        Define a largura do cabeçalho como 100% da largura do contêiner pai.
+        Define o preenchimento interno do cabeçalho.
+    */
+    width: 100%;
+    padding: 40px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 7%;
+}
+
+#navbar{
+    /* 
+        Define a largura do elemento de navegação como 100% da largura do contêiner pai.
+        Define o layout flexível para os elementos dentro do navbar.
+        Alinha os itens verticalmente ao centro e distribui o espaço restante entre eles.
+    */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#nav_logo{
+    /* 
+        Define o tamanho da fonte do logotipo de navegação.
+    */
+    font-size: 30px;
+}
+
+#nav_list{
+    /* 
+        Define o layout flexível para a lista de navegação.
+        Remove a estilização padrão da lista.
+        Define o espaçamento entre os itens da lista.
+    */
+    display: flex;
+    list-style: none;
+    gap: 80px;
+}
+
+.nav-item a{
+    /* 
+        Remove a decoração de link e define o tamanho da fonte para os itens da lista de navegação.
+        Define a cor do texto dos itens da lista de navegação.
+    */
+    text-decoration: none;
+    font-size: 15px;
+    color: #FF7E00;
+}
+
+.nav-item a:hover{
+    /* 
+        Define a cor do texto dos itens da lista de navegação ao passar o mouse sobre eles.
+        Define a transição suave de propriedades para uma melhor experiência do usuário.
+        Altera o cursor para indicar interação.
+    */
+    color: #f0b06f;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.mobile_btn{
+    /* 
+        Oculta o botão de menu móvel.
+    */
+    display: none;
+    background-color: #EB0029;
+}
+
+.mobile_menu{
+    /* 
+        Oculta o menu móvel.
+    */
+    display: none;
+}
+
+.maria{
+    /* 
+        Define o estilo de fonte e cor para o texto com classe "maria".
+    */
+    color: #EB0029;
+    font-family: poppinsbold;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+.maria a{
+    /* 
+        Define o estilo de fonte e cor para links dentro do texto com classe "maria".
+    */
+    color: #EB0029;
+    font-family: poppinsbold;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1170px){
+    /* 
+        Estilos específicos para telas com largura máxima de 1170 pixels.
+    */
+
+    #nav_list,
+    #navbar .btn-default{
+        /* 
+            Oculta a lista de navegação e qualquer botão padrão na barra de navegação.
+        */
+        display: none;
+    }
+
+    .mobile_btn{
+        /* 
+            Exibe o botão de menu móvel.
+            Remove a borda do botão, define a cor de fundo como transparente e ajusta o tamanho da fonte.
+            Define o cursor como ponteiro para indicar interação.
+        */
+        display: block;
+        border: none;
+        background-color: transparent;
+        font-size: 1.5rem;
+        cursor: pointer;
+        
+    }
+
+    .mobile_menu.active{
+        /* 
+            Exibe o menu móvel ativo.
+            Define o layout flexível para o menu móvel, alinhando os itens ao centro e organizando-os em uma coluna.
+        */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    #mobile_nav_list{
+        /* 
+            Define o layout flexível para a lista de navegação móvel, organizando os itens em uma coluna.
+            Define o espaçamento entre os itens da lista de navegação móvel.
+            Define a margem superior e inferior para a lista de navegação móvel.
+        */
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+    }
+
+    #mobile_nav_list .nav-item{
+        /* 
+            Centraliza horizontalmente os itens da lista de navegação móvel.
+            Remove a estilização padrão da lista de navegação móvel.
+        */
+        text-align: center;
+        list-style: none;
+
+    }
+
+}

@@ -1,0 +1,208 @@
+/* 
+    Estilos para a seção inicial da página (Home).
+*/
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes cursorBlink {
+    0% { border-color: transparent; }
+    100% { border-color: black; }
+}
+
+
+.typing-effect {
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.typing-text {
+    border-right: 0.15em solid black;
+    animation: cursorBlink 0.75s step-end infinite;
+}
+
+
+#home{
+    /* 
+        Define o layout flexível da seção, permitindo que os elementos dentro dela sejam alinhados horizontalmente.
+        Define a altura mínima da seção como 100% da altura da janela do navegador, subtraindo 91 pixels (altura da barra de navegação).
+        Posiciona a seção como relativa para permitir o posicionamento absoluto de elementos filhos.
+    */
+    display: flex;
+    min-height: calc(100vh-91px);
+    justify-content: space-between;
+}
+
+#cta{
+    /* 
+        Define o layout flexível para o conteúdo principal da seção.
+        Define a largura fixa do conteúdo principal.
+        Alinha os itens verticalmente em uma coluna.
+        Define o espaçamento entre os itens dentro da coluna.
+        Define a margem superior para afastar o conteúdo do topo da seção.
+    */
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    margin-top: 60px;
+    
+}
+
+#cta .title{
+    /* 
+        Define o tamanho da fonte para o título principal.
+        Define a largura do título principal.
+        Define a altura da linha para espaçamento entre linhas.
+    */
+    font-size: 4rem;
+    width: 600px;
+    line-height: 80px;
+}
+
+#cta .description{
+     /* 
+        Define a largura do texto de descrição.
+        Define o tamanho da fonte para o texto de descrição.
+        Define o espaçamento entre os itens dentro da coluna.
+        Define a altura da linha para espaçamento entre linhas.
+        Define a família de fontes para o texto de descrição.
+    */
+    width: 350px;
+    font-size: 1.2rem;
+    gap: 24px;
+    line-height: 30px;
+    font-family: poppinslight;
+}
+
+#cta_button{
+    /* 
+        Define a posição Z para o botão de chamada à ação, garantindo que ele esteja acima de outros elementos na página.
+    */
+    z-index: 2;
+}
+
+#cta_button a{
+    /* 
+        Remove a decoração de link do botão de chamada à ação.
+    */
+    text-decoration: none;
+}
+
+#banner{
+    /* 
+        Define o layout flexível para o banner da seção.
+        Alinha os itens à parte superior e à direita do contêiner.
+        Define a largura do banner como 70% do contêiner pai.
+    */
+    display: flex;
+    width: 50%;
+    align-items: end;
+    justify-content: right;
+}
+
+#banner img{
+     /* 
+        Define a altura e a largura da imagem do banner.
+        Posiciona a imagem à direita do contêiner pai.
+        Define um raio de borda para a imagem do banner.
+        Posiciona a imagem de forma absoluta para permitir que ela flutue sobre outros elementos.
+    */
+    align-items: center;
+    width: 90%;
+    border-radius: 30% 10%;
+    
+}
+
+.shape{
+    /* 
+        Define o estilo para a forma de destaque do banner.
+        Define a cor de fundo da forma.
+        Define a largura, altura, borda e posicionamento da forma.
+        Define a posição Z para garantir que a forma esteja atrás do conteúdo principal.
+    */
+    background-color: #F0C9C9;
+    width: 575px;
+    height: 36px;
+    position: absolute;
+    border-radius: 12px;
+    bottom: 28px;
+    left: 118px;
+    z-index: 1;
+}
+
+.shape2{
+    /* 
+        Define o estilo para a forma de destaque do banner.
+        Define a cor de fundo da forma.
+        Define a largura, altura, borda e posicionamento da forma.
+        Define a posição Z para garantir que a forma esteja atrás do conteúdo principal.
+    */
+    background-color: #F0C9C9;
+    width: 575px;
+    height: 36px;
+    position: absolute;
+    border-radius: 12px;
+    bottom: 28px;
+    left: 121px;
+    z-index: 1;
+}
+
+@media screen and (max-width: 1170px){
+    /* 
+        Estilos específicos para telas com largura máxima de 1170 pixels.
+    */
+    #home{
+        /* 
+            Redefine a altura mínima da seção para 100% da altura da janela do navegador.
+            Remove o preenchimento superior para a seção.
+        */
+        min-height: 100%;
+        padding-top: 0px;
+    }
+
+    #banner,
+    #banner img,
+    #home .shape, 
+    #home .shape2{
+        /* 
+            Oculta o banner e as formas de destaque para telas menores.
+        */
+        display: none;
+    }
+
+    #cta{
+        /* 
+            Redefine a largura do conteúdo principal para 100%.
+            Alinha o conteúdo principal centralmente.
+        */
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    #cta .title{
+        /* 
+            Redefine a largura do título principal para 100%.
+        */
+        width: 100%;
+    }
+
+    #cta-terceira{
+        /* 
+            Redefine a largura do conteúdo principal da terceira seção para 100%.
+            Alinha o texto da terceira seção centralmente.
+        */
+        width: 100%;
+        text-align: center;
+    }
+    #cta-terceira h1{
+        /* 
+            Alinha o título da terceira seção à esquerda.
+        */
+        text-align: left;
+    }
+}

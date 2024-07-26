@@ -1,0 +1,171 @@
+.carrinho{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-image: linear-gradient(
+        to top left,
+        white 10%,
+        #F4ECE1);
+    height: 100%;
+}
+
+.esquerdacarrinho{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    
+    
+}
+
+.logoesquerda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.carrinho .logo{
+    width: 150px;
+}
+
+.carrinho .nomeprincipal{
+    font-size: 70px;
+    font-family: poppinsbold;
+    color: #EB0029;
+    cursor: pointer;
+}
+
+.caminho{
+    font-size: 18px;
+    font-family: poppinslight;
+    color: #EB0029;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.carrinho input{
+    background-color: rgb(207, 204, 204);
+    color: #EB0029;
+    border-radius: 0px;
+    margin-top: 10px;
+    height: 40px;
+    width: 100%;
+}
+
+.tresinputs{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.tresinputs input{
+    width: 200px;
+}
+
+.carrinho .doisinputs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.doisinputs input{
+    width: 250px;
+}
+
+.barrafinal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.carrinho .btn-default{
+    width: 170px;
+    height: 30px;
+}
+
+.voltar{
+    color: #EB0029;
+    cursor: pointer;
+}
+
+.direitocarrinho{
+    background-color: #FF7E00;
+    height: 100%;
+    margin-left: 20px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.fileiracarrinho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.margem{
+    margin-top: 20px;
+    padding: 30px;
+}
+
+.carrinho .imagemprod{
+    width: 150px;
+    height: 100px;
+}
+
+.direitocarrinho{
+    color: white;
+    
+}
+
+.linhacarrinho1{
+    height: 2px;
+    background-color: white;
+
+}
+
+.linhacarrinho2{
+    height: 2px;
+    background-color: white;
+    margin: 30px;
+
+}
+
+.linhacarrinho3{
+    height: 2px;
+    background-color: white;
+    margin: 30px;
+
+}
+
+.subtotal{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px;
+}
+
+.desconto{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    margin: 30px;
+    margin-top: 14px;
+}
+
+.desconto input{
+    width: 350px;
+}

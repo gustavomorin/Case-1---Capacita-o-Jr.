@@ -1,0 +1,85 @@
+.feedback{
+    display: flex;
+    flex-direction: row;
+}
+
+.esquerda .titulosecaofeedback{
+    font-family: poppinsbold ;
+    font-size: 25px;
+    margin-top: 80px;
+}
+
+.esquerda .subtitulosecaofeedback{
+    font-family: poppinsbold;
+    width: 100%;
+    font-size: 30px;
+    color: black;
+    
+}
+
+.feedimage{
+    width: 50%;
+    border-radius: 10% 30%
+}
+
+.comentario{
+    width: 90%;
+    font-family: poppinslight;
+    line-height: 25px;
+    font-size: 20px;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    line-height: 30px;
+}
+
+.cliente .clientemulher{
+    width: 150px; /* ajuste conforme necessário */
+    height: 150px; /* ajuste conforme necessário */
+    border-radius: 50%; /* transforma a imagem em um círculo */
+    object-fit: cover; /* garante que a imagem preencha o contêiner sem distorção */
+    }
+
+.cliente{
+    display: flex;
+    flex-direction: row;
+}
+
+.empresaria p{
+    font-family: poppinslight;
+}
+
+.empresaria{
+    display: flex;
+    flex-direction: column;
+    line-height: 30px;
+    margin-left: 30px;
+    justify-content: center;
+
+}
+
+.cor{
+    color: #FF7E00;
+}
+
+@media screen and (max-width: 1170px){
+    .feedimage{
+        display: none;
+    }
+    .esquerda .titulosecaofeedback{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .esquerda .subtitulosecaofeedback{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .cliente, .comentario{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+}

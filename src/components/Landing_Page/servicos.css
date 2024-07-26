@@ -1,0 +1,61 @@
+.serv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.titulosecaoservicos{
+    font-family: poppinsbold ;
+    font-size: 25px;
+}
+
+.subtitulosecaoservicos{
+    display: flex;
+    font-family: poppinsbold;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    font-size: 30px;
+    color: black;
+}
+
+.servicos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.servicos img{
+    width: 50%;
+    border-radius: 40px;
+}
+
+.servicos h3{
+    margin-top: 20px;
+    font-size: 23px;
+    color: black;
+}
+
+
+.servicos .servico{
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 70px;
+    align-items: center;
+    text-align: center;
+}
+
+.servico p{
+    font-size: 1.2rem;
+    font-family: poppinslight;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}

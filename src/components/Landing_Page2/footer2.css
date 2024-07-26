@@ -1,0 +1,124 @@
+footer{
+    margin-top: 100px;
+    width: 100%;
+    padding: 28px 8%;
+    color: #8A6C6C;
+    
+}
+
+#footer_content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    margin-top: -20px;
+    
+}
+
+#footer_contacts h1{
+    margin-bottom: 2rem;
+}
+
+#footer_contacts p{
+    line-height: 20px;
+    font-family: poppinslight;
+}
+
+#footer_contacts .endereco{
+    font-family: poppinsmedium;
+    line-height: 30px;
+}
+
+#footer_contacts .socialmedia{
+    line-height: 20px;
+    font-family: poppinsbold;
+    margin-top: 20px;
+}
+
+
+#footer_social_media{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1.5rem;
+
+}
+
+#footer_social_media .footer-link{
+    height: 2.5rem;
+    width: 2.5rem;
+    color: #8A6C6C;
+    border-radius: 50%;
+}
+
+#footer_social_media .footer-link:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link{
+    color: #8A6C6C;
+    text-decoration: none;
+}
+
+#footer_copyright{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    padding: 1.5rem;
+}
+
+#direita{
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+#linha-contato{
+    width: 100%;
+    height: 2px;
+    background-color: #EB0029;
+    margin-top: -10px;
+}
+
+#linha-agendar{
+    position: absolute;
+    width: 84%;
+    height: 2px;
+    background-color: #EB0029;
+    top: 2550px;
+}
+
+@media screen and (max-width: 1170px){
+    #footer_content{
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    #linha-contato{
+        margin-top: 50px;
+    }
+
+    #footer_copyright{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+
+
+@media screen and (max-width: 426px){
+    #footer_content{
+        grid-template-columns: (1,1fr);
+        padding: 3rem 2rem;
+    }
+
+
+}

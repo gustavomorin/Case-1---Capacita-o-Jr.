@@ -1,0 +1,166 @@
+/* .retangulofrete{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(207, 204, 204);
+    margin-top: 20px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    font-family: poppinslight;
+}
+
+.retangulofrete2{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(207, 204, 204);
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
+}
+
+.alterar{
+    color: #EB0029;
+}
+
+.formadefrete{
+    font-family: poppinsbold ;
+    font-size: 25px;
+    margin-top: 30px;
+    color: #EB0029;
+    justify-items: start;
+}
+
+.carrinho input .radio-input{
+    background-color: #EB0029;
+} */
+
+.retangulofrete {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(207, 204, 204);
+    margin-top: 20px;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    padding: 10px;
+    font-family: poppinslight;
+}
+
+.retangulofrete2 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgb(207, 204, 204);
+    margin-top: 20px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 10px;
+}
+
+.alterar {
+    color: #EB0029;
+    cursor: pointer;
+}
+
+.formadefrete {
+    font-family: poppinsbold;
+    font-size: 25px;
+    margin-top: 30px;
+    color: #EB0029;
+    justify-items: start;
+}
+
+/* Ajuste do input radio */
+.radio-input {
+    width: 15px !important; /* Reduz o tamanho da bolinha */
+    height: 15px !important; /* Reduz o tamanho da bolinha */
+    border-radius: 50%; /* Garante que a bolinha seja redonda */
+    padding: 0;
+}
+
+/* Media Queries para telas menores */
+@media (max-width: 1170px) {
+    .carrinho {
+        flex-direction: column;
+    }
+
+    .esquerdacarrinho, .direitocarrinho{
+        flex: none;
+        width: 100%;
+    }
+
+    .direitocarrinho{
+        display: none;
+    }
+
+    .logoesquerda {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nomeprincipal {
+        font-size: 20px;
+    }
+
+    .retangulofrete, .retangulofrete2 {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .radio-input {
+        width: 15px;
+        height: 15px;
+    }
+
+    .btn-default {
+        width: 100%;
+        height: 45px;
+    }
+
+    .imagemprod {
+        width: 60px;
+    }
+
+    .desconto {
+        flex-direction: column;
+    }
+
+    .desconto input {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .nomeprincipal {
+        font-size: 18px;
+    }
+
+    .formadefrete {
+        font-size: 20px;
+    }
+
+    .fileiracarrinho {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .imagemprod {
+        width: 50px;
+    }
+
+    .btn-default {
+        width: 100%;
+        height: 40px;
+    }
+}
